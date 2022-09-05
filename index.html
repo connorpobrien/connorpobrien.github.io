@@ -42,7 +42,6 @@
                         <span class="text-primary">O'Brien</span>
                     </h1>
                     <div class="subheading mb-4">
-                        925-951-7723 · 
                         <a href="mailto:connorpobrien1@gmail.com">connorpobrien1@gmail.com</a>
                     </div>
                     <p class="mb-5">
@@ -90,37 +89,38 @@
                         <h3 class="container"></h3>
                         <div class="contact-box"></div>
                             <div class="contact-left">
-                                <form>
+                                <form action="https://formsubmit.co/connorpobrien1@gmail.com" method="Post">
                                     <div class="input-row">
                                         <div class="input-group">
                                             <label>Name</label>
-                                            <input type="text" placeholder="John Doe">
+                                            <input type="text" name="name" placeholder="John Doe" required>
                                         </div>
                                         <div class="input-group">
                                             <label>Phone</label>
-                                            <input type="text" placeholder="415-123-4567">
+                                            <input type="text" name="phone" placeholder="415-123-4567">
                                         </div>
                                     </div>
 
                                     <div class="input-row">
                                         <div class="input-group">
                                             <label>Email</label>
-                                            <input type="email" placeholder="Johndoe45@gmail.com">
+                                            <input type="email" name="email" placeholder="Johndoe45@gmail.com" required>
                                         </div>
                                         <div class="input-group">
                                             <label>Subject</label>
-                                            <input type="text" placeholder="Job Opportunity">
+                                            <input type="text" name="subject" placeholder="Job Opportunity" required>
                                         </div>
                                     </div>
 
+                                    <input type="hidden" name="_next" value="https://connorpobrien.github.io/pages/thankyou.html"
+
                                     <label>Message</label>
-                                    <textarea rows="6" placeholder="Your Message..."></textarea>
+                                    <textarea rows="6" name="message" placeholder="Your Message..." required></textarea>
 
                                     <button type="submit">SEND</button>
                                 </form>
-
                             </div>
-                        </div>
+                        </div>                            
                 </div>
             </section>
             <hr class="m-0" />
