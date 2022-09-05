@@ -14,7 +14,7 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-darkblue: #003366;
+  --bs-darkblue: #01153E;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #bd5d38;
@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #003366;
+  --bs-primary: #01153E;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -42,9 +42,9 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 00, 51, 102;
+  --bs-primary-rgb: 1, 21, 62;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-tertiary-rgb: 58, 97, 82;
+  --bs-tertiary-rgb: 1, 50, 32;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -55,7 +55,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -103,7 +103,16 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #01153E;
+}
+
+h3, .h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -239,7 +248,7 @@ sup {
 }
 
 a {
-  color: #003366;
+  color: #01153E;
   text-decoration: none;
 }
 a:hover {
@@ -2522,8 +2531,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.25);
 }
 .form-check-input:checked {
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2532,8 +2541,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2610,7 +2619,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #003366;
+  background-color: #01153E;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2639,7 +2648,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #003366;
+  background-color: #01153E;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3047,8 +3056,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 .btn-primary:hover {
   color: #000;
@@ -3071,8 +3080,8 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #000;
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 
 .btn-secondary {
@@ -3286,27 +3295,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #003366;
-  border-color: #003366;
+  color: #01153E;
+  border-color: #01153E;
 }
 .btn-outline-primary:hover {
   color: #000;
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.5);
 }
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #000;
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.5);
 }
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-  color: #003366;
+  color: #01153E;
   background-color: transparent;
 }
 
@@ -3487,7 +3496,7 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #003366;
+  color: #01153E;
   text-decoration: underline;
 }
 .btn-link:hover {
@@ -3796,7 +3805,7 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #003366;
+  background-color: #01153E;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -3837,7 +3846,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #003366;
+  background-color: #01153E;
 }
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
   color: #adb5bd;
@@ -3959,7 +3968,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #003366;
+  color: #01153E;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4016,7 +4025,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #003366;
+  background-color: #01153E;
 }
 
 .nav-fill > .nav-link,
@@ -4820,7 +4829,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #003366;
+  color: #01153E;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -4851,8 +4860,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -5048,7 +5057,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #003366;
+  background-color: #01153E;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5131,8 +5140,8 @@ textarea.form-control-lg {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #003366;
-  border-color: #003366;
+  background-color: #01153E;
+  border-color: #01153E;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -6451,7 +6460,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #003366;
+  color: #01153E;
 }
 .link-primary:hover, .link-primary:focus {
   color: #ca7d60;
@@ -6904,7 +6913,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-  border-color: #003366 !important;
+  border-color: #01153E !important;
 }
 
 .border-secondary {
@@ -7887,6 +7896,7 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
 }
+
 
 .bg-opacity-10 {
   --bs-bg-opacity: 0.1;
@@ -11420,7 +11430,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #003366;
+  background-color: #01153E;
 }
 
 .dev-icons {
@@ -11452,4 +11462,79 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+.container{
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-box{
+    background-color: #fff;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 40px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #01153E;
+    color: #fff;
+}
+
+.container p{
+  margin-bottom: 40px;
+}
+
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group{
+  flex-basis: 45%
+}
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label{
+  margin-bottom: 6px;
+  display: block;
+  color: #01153E;
+}
+button{
+  background: #01153E;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.contact-left h4{
+  color: #01153E;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-right h4{
+  font-weight: 600;
+  margin-bottom: 30px;
 }
