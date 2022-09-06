@@ -11471,6 +11471,8 @@ section.resume-section .resume-section-content {
   }
 }
 
+/* CSS code for 'Contact Me' section of main page */
+
 .container{
   width: 80%;
   margin: 50px auto;
@@ -11545,3 +11547,4 @@ button{
   font-weight: 600;
   margin-bottom: 30px;
 }
+

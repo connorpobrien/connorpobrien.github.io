@@ -1,12 +1,48 @@
-<!doctype <html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Thank You Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymCalculator</title>
+    <link href="calculator.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="gym-calculator">
+        <div class="top">
+            <h2>1RM Calculator</h2>
 
-    <h1>Calculator</h1>
+            <form action="#">
+                <div class="group">
+                    <div class ="title">Weight</div>
+                    <input type="text" value="425" class="weight-amount">
+                </div>
+
+                <div class="group">
+                    <div class ="title">Numbers of Reps</div>
+                    <input type="text" value="8" class="numreps">
+                </div>
+
+                <div class="group">
+                    <div class ="title">Perceived RPE</div>
+                    <input type="text" value="7.5" class="perceivedRPE">
+                </div>
+            </form>
+        </div>
+
+        <div class="result">
+            <div class="left">
+                <div class="calculated-max">
+                    <h3>Estimated 1RM</h3>
+                    <div class="value">450</div>
+                </div>
+                <button class="calculate-btn">Calculate</button>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
 
 </body>
 </html>

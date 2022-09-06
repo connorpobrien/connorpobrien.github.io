@@ -1,0 +1,104 @@
+/* CSS code for 'Gym Calculator' */
+
+.gym-calculator {
+    font-family: Roboto, sans-serif;
+    width: 600px; 
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: #14213d;
+    overflow: hidden;
+  }
+
+  .gym-calculator,
+  .gym-calculator * {
+    box-sizing: border-box;
+  }
+  
+  .gym-calculator .top {
+    background: #14213d;
+    color: #fff;
+    padding: 32px;
+  }
+  
+  .gym-calculator .top h2 {
+    margin-top: 0;
+  }
+  
+  .gym-calculator form {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  
+  .gym-calculator .title { 
+    margin-bottom: 16px;
+  }
+
+  .gym-calculator form input {
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+
+  .gym-calculator .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gym-calculator .result .left {
+    width: 100%;
+    padding: 8px 32px;
+  }
+
+  .gym-calculator .left h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .gym-calculator .result .value {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20, 31, 61, 0.2);
+  }
+
+  .gym-calculator .result .value::after {
+    content: "lbs";
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 6px;
+    opacity: 0.3;
+  }
+
+  .gym-calculator .calculate-btn {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+  }
+
+  @media (max-width: 650px) {
+    .gym-calculator {
+        width: 90%;
+        max-width: 500px;
+    }
+    .gym-calculator form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .gym-calculator .result {
+        flex-direction: column;
+        text-align: center;
+    }
+
+  }
+
