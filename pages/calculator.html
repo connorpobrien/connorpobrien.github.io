@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="gym-calculator">
+        <!--1RM Calculator-->
         <div class="top">
             <h2>1RM Calculator</h2>
 
@@ -40,7 +41,43 @@
             </div>
             <div class="right"></div>
         </div>
+
+
+        <!--Second Calculator-->
+        <div class="bottom">
+            <h2>Load Calculator</h2>
+
+            <form action="#">
+                <div class="group">
+                    <div class ="title">Your 1RM</div>
+                    <input type="text" value="900" class="your-one-rep-max">
+                </div>
+
+                <div class="group">
+                    <div class ="title">Desired #Reps</div>
+                    <input type="text" value="8" class="desired-numreps">
+                </div>
+
+                <div class="group">
+                    <div class ="title">Desired RPE</div>
+                    <input type="text" value="7" class="desiredRPE">
+                </div>
+            </form>
+        </div>
+
+        <div class="result">
+            <div class="left">
+                <div class="calculated-weight-to-use">
+                    <h3>Use This Weight:</h3>
+                    <div class="value">340</div>
+                </div>
+                <button class="calculate-btn2">Calculate</button>
+            </div>
+            <div class="right"></div>
+        </div>
     </div>
+
+    
 
     <script src="calculator.js"></script>
 

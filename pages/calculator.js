@@ -1,3 +1,4 @@
+// JS code for calculator # 1 
  const weightAmountInput = document.querySelector(".weight-amount");
  const numRepsInput = document.querySelector(".numreps");
  const perceivedRPEInput = document.querySelector(".perceivedRPE");
@@ -77,9 +78,20 @@ const updateData = (max) => {
     calculatedMaxValue.innerHTML = Math.round(max);
 };
 
+const refreshInputValues = () => {
+    weightAmount = parseFloat(weightAmountInput.value);
+    numReps = parseFloat(numRepsInput.value);
+    perceivedRpe = parseFloat(perceivedRPEInput.value);
+}
+
 const init = () => {
+    refreshInputValues();
     let max = calculateMax();
     updateData(max);
 };
 
 init();
+
+calculateBtn.addEventListener("click", init);
+
+

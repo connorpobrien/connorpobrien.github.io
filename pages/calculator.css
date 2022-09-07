@@ -19,7 +19,13 @@
   .gym-calculator .top {
     background: #14213d;
     color: #fff;
-    padding: 32px;
+    padding: 28px;
+  }
+
+  .gym-calculator .bottom {
+    background: #14213d;
+    color: #fff;
+    padding: 28px;
   }
   
   .gym-calculator .top h2 {
@@ -75,6 +81,18 @@
   }
 
   .gym-calculator .calculate-btn {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+  }
+
+  .gym-calculator .calculate-btn2 {
     background: #e63946;
     color: #fff;
     border: none;
