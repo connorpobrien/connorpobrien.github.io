@@ -84,14 +84,63 @@ const refreshInputValues = () => {
     perceivedRpe = parseFloat(perceivedRPEInput.value);
 }
 
+
+// JS code for Calculator #2 (bottom)
+const oneRepMaxInput = document.querySelector(".your-one-rep-max");
+const desiredRepsInput = document.querySelector(".desired-numreps");
+const desiredRpeInput = document.querySelector(".desiredRPE");
+
+const calculatedOutput2 = document.querySelector(".calculated-weight-to-use .value");
+
+const calculateBtn2 = document.querySelector(".calculate-btn2");
+
+let oneRepMax = parseFloat(oneRepMaxInput.value);
+let desiredReps = parseFloat(desiredRepsInput.value);
+let desiredRpe2 = parseFloat(desiredRpeInput.value);
+
+const calculateOutputWeight = () => {
+    if (desiredRpe2 == 10) {
+        output2 = rpehashmap10.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 9.5) {
+        output2 = rpehashmap95.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 9) {
+        output2 = rpehashmap9.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 8.5) {
+        output2 = rpehashmap85.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 8) {
+        output2 = rpehashmap8.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 7.5) {
+        output2 = rpehashmap75.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 7) {
+        output2 = rpehashmap7.get(desiredReps) * oneRepMax
+    } else if (desiredRpe2 == 6.5) {
+        output2 = rpehashmap65.get(desiredReps) * oneRepMax
+    }
+    return output2;
+};
+
+const updateData2 = (output2) => {
+    calculatedOutput2.innerHTML = Math.round(output2);
+};
+
+const refreshInputValues2 = () => {
+    oneRepMax = parseFloat(oneRepMaxInput.value);
+    desiredReps = parseFloat(desiredRepsInput.value);
+    desiredRpe2 = parseFloat(desiredRepsInput.value);
+}
+
 const init = () => {
     refreshInputValues();
     let max = calculateMax();
     updateData(max);
-};
 
-init();
+    refreshInputValues2();
+    let output2 = calculateOutputWeight();
+    updateData2(output2);
+}
+
+init;
 
 calculateBtn.addEventListener("click", init);
-
+calculateBtn2.addEventListener("click", init);
 
