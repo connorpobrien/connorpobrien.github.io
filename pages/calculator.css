@@ -120,3 +120,41 @@
 
   }
 
+.explanation {
+  font-family: Roboto, sans-serif;
+    width: 1100px; 
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: #14213d;
+    overflow: hidden;
+}
+
+.explanation, 
+.explanation * {
+  box-sizing: border-box;
+}
+
+.explanation .writing {
+  background: #fff;
+  color: #14213d;
+  padding: 28px;
+}
+
+.explanation h2 {
+  margin-top: 0;
+}
+
+.explanation h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1100px) {
+  .explanation {
+    width: 90%;
+    max-width: 500px;
+  }
+}
